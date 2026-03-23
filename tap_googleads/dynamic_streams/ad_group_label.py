@@ -20,4 +20,4 @@ class AdGroupLabelStream(DynamicQueryStream):
         """
 
     name = "ad_group_label"
-    primary_keys = ["adGroup__id", "label__id"]
+    primary_keys = ["adGroup__id", "label__id", "customer_id"]

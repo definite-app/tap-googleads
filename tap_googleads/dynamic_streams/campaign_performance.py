@@ -14,6 +14,7 @@ class CampaignPerformance(DynamicQueryStream):
 
     name = "campaign_performance"
     primary_keys = [
+        "customer_id",
         "campaign__name",
         "campaign__status",
         "segments__date",

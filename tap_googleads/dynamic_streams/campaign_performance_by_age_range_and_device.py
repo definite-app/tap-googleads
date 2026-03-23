@@ -14,6 +14,7 @@ class CampaignPerformanceByAgeRangeAndDevice(DynamicQueryStream):
 
     name = "campaign_performance_by_age_range_and_device"
     primary_keys = [
+        "customer_id",
         "adGroupCriterion__ageRange__type",
         "campaign__name",
         "segments__date",

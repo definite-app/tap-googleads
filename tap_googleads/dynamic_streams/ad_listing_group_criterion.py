@@ -27,7 +27,6 @@ class AdListingGroupCriterionStream(DynamicQueryStream):
           ad_group_criterion.listing_group.case_value.product_channel.channel,
           ad_group_criterion.listing_group.case_value.product_channel_exclusivity.channel_exclusivity,
           ad_group_criterion.listing_group.case_value.product_condition.condition,
-          ad_group_criterion.listing_group.case_value.product_custom_attribute.index,
           ad_group_criterion.listing_group.case_value.product_custom_attribute.value,
           ad_group_criterion.listing_group.case_value.product_item_id.value,
           ad_group_criterion.listing_group.case_value.product_type.level,
@@ -39,4 +38,4 @@ class AdListingGroupCriterionStream(DynamicQueryStream):
         """
 
     name = "ad_listing_group_criterion"
-    primary_keys = ["adGroup__id", "adGroupCriterion__criterionId"]
+    primary_keys = ["adGroup__id", "adGroupCriterion__criterionId", "customer_id"]

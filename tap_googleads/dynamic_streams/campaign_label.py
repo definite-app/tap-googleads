@@ -20,4 +20,4 @@ class CampaignLabelStream(DynamicQueryStream):
         """
 
     name = "campaign_label"
-    primary_keys = ["campaign__id", "label__id"]
+    primary_keys = ["campaign__id", "label__id", "customer_id"]

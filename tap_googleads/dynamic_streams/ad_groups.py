@@ -43,6 +43,6 @@ class AdGroupsStream(DynamicQueryStream):
        """
 
     name = "adgroups"
-    primary_keys = ["adGroup__id", "segments__date"]
+    primary_keys = ["adGroup__id", "segments__date", "customer_id"]
     replication_key = "segments__date"
     add_date_filter_to_query = True

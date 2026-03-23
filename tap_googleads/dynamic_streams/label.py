@@ -20,5 +20,5 @@ class LabelStream(DynamicQueryStream):
         """
 
     name = "label"
-    primary_keys = ["label__id"]
+    primary_keys = ["label__id", "customer_id"]
     replication_key = None 
