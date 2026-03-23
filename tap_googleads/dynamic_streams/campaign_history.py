@@ -34,6 +34,6 @@ class CampaignHistoryStream(DynamicQueryStream):
         """
 
     name = "campaign_history"
-    primary_keys = ["campaign__id","segments__date"]
+    primary_keys = ["campaign__id","segments__date", "customer_id"]
     replication_key = "segments__date"
     add_date_filter_to_query = True

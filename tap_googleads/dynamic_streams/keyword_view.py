@@ -56,5 +56,5 @@ class KeywordViewStream(DynamicQueryStream):
 
     name = "keyword_view"
     replication_key = "segments__date"
-    primary_keys = ["adGroupCriterion__criterionId","adGroup__id","segments__device","segments__slot", "segments__adNetworkType","segments__date"]
+    primary_keys = ["adGroupCriterion__criterionId","adGroup__id","segments__device","segments__slot", "segments__adNetworkType","segments__date", "customer_id"]
     add_date_filter_to_query = True

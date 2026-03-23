@@ -23,4 +23,4 @@ class CampaignCriterionStream(DynamicQueryStream):
         """
 
     name = "campaign_criterion"
-    primary_keys = ["campaign__id", "campaignCriterion__resourceName"]
+    primary_keys = ["campaign__id", "campaignCriterion__resourceName", "customer_id"]

@@ -53,7 +53,7 @@ class ClickViewReportStream(DynamicQueryStream):
         return schema
 
     name = "click_view_report"
-    primary_keys = ["clickView__gclid"]
+    primary_keys = ["clickView__gclid", "customer_id"]
     replication_key = "date"
 
     def post_process(self, row, context):

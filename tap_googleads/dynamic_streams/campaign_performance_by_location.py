@@ -17,4 +17,5 @@ class CampaignPerformanceByLocation(DynamicQueryStream):
         "locationView__resourceName",
         "campaign__name",
         "segments__date",
+        "customer_id",
     ]

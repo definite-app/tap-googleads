@@ -39,4 +39,4 @@ class AdListingGroupCriterionStream(DynamicQueryStream):
         """
 
     name = "ad_listing_group_criterion"
-    primary_keys = ["adGroup__id", "adGroupCriterion__criterionId"]
+    primary_keys = ["adGroup__id", "adGroupCriterion__criterionId", "customer_id"]

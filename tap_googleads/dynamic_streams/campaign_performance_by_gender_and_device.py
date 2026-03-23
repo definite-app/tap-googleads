@@ -14,6 +14,7 @@ class CampaignPerformanceByGenderAndDevice(DynamicQueryStream):
 
     name = "campaign_performance_by_gender_and_device"
     primary_keys = [
+        "customer_id",
         "adGroupCriterion__gender__type",
         "campaign__name",
         "segments__date",

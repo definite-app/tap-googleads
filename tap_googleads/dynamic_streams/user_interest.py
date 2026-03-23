@@ -21,4 +21,4 @@ class UserInterestStream(DynamicQueryStream):
         """
 
     name = "user_interest"
-    primary_keys = ["userInterest__userInterestId"]
+    primary_keys = ["userInterest__userInterestId", "customer_id"]
