@@ -27,6 +27,7 @@ class AdListingGroupCriterionStream(DynamicQueryStream):
           ad_group_criterion.listing_group.case_value.product_channel.channel,
           ad_group_criterion.listing_group.case_value.product_channel_exclusivity.channel_exclusivity,
           ad_group_criterion.listing_group.case_value.product_condition.condition,
+          ad_group_criterion.listing_group.case_value.product_custom_attribute.index,
           ad_group_criterion.listing_group.case_value.product_custom_attribute.value,
           ad_group_criterion.listing_group.case_value.product_item_id.value,
           ad_group_criterion.listing_group.case_value.product_type.level,
